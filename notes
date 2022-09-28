@@ -11,3 +11,8 @@ When you import a module you invoque it.
 
 Node have a lot of build in modules.
 
+We install nodemon, we would ot have to reload each time our app.
+We gonna install it in dev dependencies. npm i nodemon -D (--save-dev)
+We don't need Nodemon in production we just need it for developpement.
+
+It's important to put the folder with noe_modules in the .gitignore file
