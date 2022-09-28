@@ -1,0 +1,23 @@
+{
+  "name": "node-js_fullcurse_john-smilga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghilphar/Node-js_FullCurse_john-smilga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghilphar/Node-js_FullCurse_john-smilga/issues"
+  },
+  "homepage": "https://github.com/Ghilphar/Node-js_FullCurse_john-smilga#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

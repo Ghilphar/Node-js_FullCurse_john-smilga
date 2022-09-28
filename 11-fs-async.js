@@ -25,4 +25,4 @@ readFile("./content/first.txt", "utf8", (err, result) => {
             })
     })
 })
-console.log('starting with the next task');
+console.log('starting with the next task')
