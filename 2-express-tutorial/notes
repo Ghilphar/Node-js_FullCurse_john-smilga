@@ -1,0 +1,14 @@
+If we use node is for 2 mains raisons.
+API or SSR (Templates with server side rendering)
+
+In express when we talk about API. We mean an HTTP interface to interact with our data.
+JavaScriptNotation - JSON
+res.json()
+send DATA
+
+SSR - template
+send templates
+res.render() method. for the SSR
+
+
+The main idia with API is that the server send DATA.

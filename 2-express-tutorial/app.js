@@ -1,19 +1,24 @@
 const express = require('express')
 const app = express()
+const {products} = require('./data')
 
+
+// This is our first and most basic API
 app.get('/', (req, res) => {
-    console.log('user hit the ressource')
-    res.status(200).send('Hoem Page')
+    res.send('<h1>Home Page</h1><a href="/api/products">Products</a>')
 })
 
-app.get('/about', (req, res) => {
-    res.status
+// route parameter
+app.get('/api/products/:productID', (req, res) => {
+    console.log(req)
+    console.log(req.params)
+    const {productID} = req.params
+    const singleProduct = products.find((product) => product.id === Number(productID))
+    res.json(singleProduct)
 })
 
-app.all('*', (req, res) => {
-    res.status(404).send('<h1>ressouce not found</h1>')
-})
+
 
 app.listen(5000, () => {
-    console.log('Server is listening on port 5000')
+    console.log('Server is listening on port 5000..');
 })
