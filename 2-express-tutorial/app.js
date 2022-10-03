@@ -1,23 +1,19 @@
 const express = require('express')
 const app = express()
-const {products} = require('./data')
+let { people } = require('./data')
+
+// static assets - build in middleware
+app.use(express.static('./methods-public'))
 
 
-// This is our first and most basic API
-app.get('/', (req, res) => {
-    res.send('<h1>Home Page</h1><a href="/api/products">Products</a>')
+app.get('/api/people', (req, res) => {
+    console.log(people)
+    res.status(200).json({ success: true, data: people })
 })
 
-// route parameter
-app.get('/api/products/:productID', (req, res) => {
-    console.log(req)
-    console.log(req.params)
-    const {productID} = req.params
-    const singleProduct = products.find((product) => product.id === Number(productID))
-    res.json(singleProduct)
+app.get('/login', (req, res) => {
+    
 })
-
-
 
 app.listen(5000, () => {
     console.log('Server is listening on port 5000..');

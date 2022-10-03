@@ -12,3 +12,12 @@ res.render() method. for the SSR
 
 
 The main idia with API is that the server send DATA.
+
+// Express Middlewares
+they are functions that executes during the request to the server.
+Each middleware have acces to request and resonse object.
+Middlewares are everywhere.
+
+
+
+// Learning gitBranching
