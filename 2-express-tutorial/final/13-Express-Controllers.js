@@ -14,6 +14,9 @@ app.use('/api/people', people)
 app.use('/login', loginRouter)
 
 
+
 app.listen(5000, () => {
     console.log('Server is listening on port 5000..');
 })
+
+// check controllers
