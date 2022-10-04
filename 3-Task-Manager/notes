@@ -1,0 +1,9 @@
+We are Building a REST API
+
+So other apps can work with our data.
+http verbs - path - function
+
+nothing stop to structure a data in other pattern
+But you should be really concistent with the pattern you choose or costummers will be confused with the logic.
+
+If the methods are differents an the path is the same. But the request is different.
