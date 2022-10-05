@@ -13,7 +13,5 @@ router.route('/').get(getAllTask)
 router.route('/').post(createOneTask)
 router.route('/:id').get(getOneTask).patch(updateTask).delete(deleteTask)
 
-// router.patch('/:id')
-// router.route('/:id')
 
 module.exports = router
